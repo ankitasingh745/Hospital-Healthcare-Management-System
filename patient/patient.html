@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Patient Registration | Hospital Healthcare Management System</title>
+
+    <link rel="stylesheet" href="patient.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="page-header">
+
+        <div class="header-left">
+            <button type="button" class="back-btn">← Back</button>
+        </div>
+
+        <div class="header-content">
+            <h1>Patient Registration</h1>
+            <p>Hospital & Healthcare Management System</p>
+        </div>
+
+    </header>
+
+
+    <!-- Main Registration Container -->
+    <main class="registration-container">
+
+        <form id="patientForm">
+
+            <!-- Section 1: Personal Information -->
+            <section class="form-section">
+
+                <div class="section-heading">
+                    <h2>1. Personal Information</h2>
+                </div>
+
+                <div class="form-grid">
+
+                    <div class="form-group">
+                        <label for="fullName">
+                            Full Name <span class="required">*</span>
+                        </label>
+                        <input
+                            type="text"
+                            id="fullName"
+                            name="fullName"
+                            placeholder="Enter full name"
+                            required
+                        >
+                    </div>
+
+
+                    <div class="form-group">
+                        <label for="dateOfBirth">
+                            Date of Birth <span class="required">*</span>
+                        </label>
+                        <input
+                            type="date"
+                            id="dateOfBirth"
+                            name="dateOfBirth"
+                            required
+                        >
+                    </div>
+
+
+                    <div class="form-group">
+                        <label for="age">
+                            Age <span class="required">*</span>
+                        </label>
+                        <input
+                            type="number"
+                            id="age"
+                            name="age"
+                            min="0"
+                            max="120"
+                            placeholder="Enter age"
+                            required
+                        >
+                    </div>
+
+
+                    <div class="form-group">
+                        <label for="gender">
+                            Gender <span class="required">*</span>
+                        </label>
+
+                        <select id="gender" name="gender" required>
+                            <option value="">Select gender</option>
+                            <option value="Male">Male</option>
+                            <option value="Female">Female</option>
+                            <option value="Other">Other</option>
+                        </select>
+                    </div>
+
+
+                    <div class="form-group">
+                        <label for="bloodGroup">
+                            Blood Group <span class="required">*</span>
+                        </label>
+
+                        <select id="bloodGroup" name="bloodGroup" required>
+                            <option value="">Select blood group</option>
+                            <option value="A+">A+</option>
+                            <option value="A-">A-</option>
+                            <option value="B+">B+</option>
+                            <option value="B-">B-</option>
+                            <option value="AB+">AB+</option>
+                            <option value="AB-">AB-</option>
+                            <option value="O+">O+</option>
+                            <option value="O-">O-</option>
+                        </select>
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- Section 2: Contact Information -->
+            <section class="form-section">
+
+                <div class="section-heading">
+                    <h2>2. Contact Information</h2>
+                </div>
+
+                <div class="form-grid">
+
+                    <div class="form-group">
+                        <label for="phone">
+                            Phone Number <span class="required">*</span>
+                        </label>
+
+                        <input
+                            type="tel"
+                            id="phone"
+                            name="phone"
+                            placeholder="Enter phone number"
+                            required
+                        >
+                    </div>
+
+
+                    <div class="form-group">
+                        <label for="email">
+                            Email Address <span class="required">*</span>
+                        </label>
+
+                        <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            placeholder="Enter email address"
+                            required
+                        >
+                    </div>
+
+
+                    <div class="form-group full-width">
+                        <label for="address">
+                            Address <span class="required">*</span>
+                        </label>
+
+                        <textarea
+                            id="address"
+                            name="address"
+                            placeholder="Enter complete address"
+                            required
+                        ></textarea>
+                    </div>
+
+
+                    <div class="form-group">
+                        <label for="city">
+                            City <span class="required">*</span>
+                        </label>
+
+                        <input
+                            type="text"
+                            id="city"
+                            name="city"
+                            placeholder="Enter city"
+                            required
+                        >
+                    </div>
+
+
+                    <div class="form-group">
+                        <label for="state">
+                            State <span class="required">*</span>
+                        </label>
+
+                        <input
+                            type="text"
+                            id="state"
+                            name="state"
+                            placeholder="Enter state"
+                            required
+                        >
+                    </div>
+
+
+                    <div class="form-group">
+                        <label for="pinCode">
+                            PIN Code <span class="required">*</span>
+                        </label>
+
+                        <input
+                            type="text"
+                            id="pinCode"
+                            name="pinCode"
+                            placeholder="Enter PIN code"
+                            required
+                        >
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- Section 3: Emergency Contact -->
+            <section class="form-section">
+
+                <div class="section-heading">
+                    <h2>3. Emergency Contact</h2>
+                </div>
+
+                <div class="form-grid">
+
+                    <div class="form-group">
+                        <label for="emergencyName">
+                            Contact Name <span class="required">*</span>
+                        </label>
+
+                        <input
+                            type="text"
+                            id="emergencyName"
+                            name="emergencyName"
+                            placeholder="Enter contact name"
+                            required
+                        >
+                    </div>
+
+
+                    <div class="form-group">
+                        <label for="relationship">
+                            Relationship <span class="required">*</span>
+                        </label>
+
+                        <select id="relationship" name="relationship" required>
+                            <option value="">Select relationship</option>
+                            <option value="Father">Father</option>
+                            <option value="Mother">Mother</option>
+                            <option value="Spouse">Spouse</option>
+                            <option value="Sibling">Sibling</option>
+                            <option value="Guardian">Guardian</option>
+                            <option value="Other">Other</option>
+                        </select>
+                    </div>
+
+
+                    <div class="form-group">
+                        <label for="emergencyPhone">
+                            Contact Number <span class="required">*</span>
+                        </label>
+
+                        <input
+                            type="tel"
+                            id="emergencyPhone"
+                            name="emergencyPhone"
+                            placeholder="Enter emergency number"
+                            required
+                        >
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- Section 4: Medical Information -->
+            <section class="form-section">
+
+                <div class="section-heading">
+                    <h2>4. Medical Information</h2>
+                </div>
+
+                <div class="form-grid">
+
+                    <div class="form-group full-width">
+                        <label for="medicalConditions">
+                            Existing Medical Conditions
+                        </label>
+
+                        <textarea
+                            id="medicalConditions"
+                            name="medicalConditions"
+                            placeholder="Mention any existing medical conditions (Optional)"
+                        ></textarea>
+                    </div>
+
+
+                    <div class="form-group full-width">
+                        <label for="allergies">
+                            Allergies
+                        </label>
+
+                        <textarea
+                            id="allergies"
+                            name="allergies"
+                            placeholder="Mention any known allergies (Optional)"
+                        ></textarea>
+                    </div>
+
+
+                    <div class="form-group full-width">
+                        <label for="medications">
+                            Current Medications
+                        </label>
+
+                        <textarea
+                            id="medications"
+                            name="medications"
+                            placeholder="Mention current medications (Optional)"
+                        ></textarea>
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- Section 5: Insurance -->
+            <section class="form-section">
+
+                <div class="section-heading">
+                    <h2>5. Insurance Information</h2>
+                </div>
+
+                <div class="form-grid">
+
+                    <div class="form-group">
+                        <label for="insuranceProvider">
+                            Insurance Provider
+                        </label>
+
+                        <input
+                            type="text"
+                            id="insuranceProvider"
+                            name="insuranceProvider"
+                            placeholder="Enter insurance provider"
+                        >
+                    </div>
+
+
+                    <div class="form-group">
+                        <label for="policyNumber">
+                            Policy Number
+                        </label>
+
+                        <input
+                            type="text"
+                            id="policyNumber"
+                            name="policyNumber"
+                            placeholder="Enter policy number"
+                        >
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- Form Actions -->
+            <div class="form-actions">
+
+                <button type="reset" class="secondary-btn">
+                    Clear Form
+                </button>
+
+                <button type="submit" class="primary-btn">
+                    Preview Details →
+                </button>
+
+            </div>
+
+        </form>
+
+    </main>
+
+
+    <script src="patient.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,48 @@
+ {
+    "patients": [
+        {
+            "patientId": "P001",
+            "fullName": "Rahul Sharma",
+            "dateOfBirth": "2001-05-15",
+            "age": 25,
+            "gender": "Male",
+            "bloodGroup": "B+",
+
+            "phone": "9876543210",
+            "email": "rahul@gmail.com",
+            "address": "Mathura",
+            "city": "Mathura",
+            "state": "Uttar Pradesh",
+            "pinCode": "281001",
+
+            "emergencyContact": {
+                "name": "Raj Sharma",
+                "relationship": "Father",
+                "phone": "9876543211"
+            },
+
+            "medicalInformation": {
+                "conditions": "None",
+                "allergies": "None",
+                "medications": "None"
+            },
+
+            "insurance": {
+                "provider": "ABC Health Insurance",
+                "policyNumber": "POL123456"
+            },
+
+            "registrationDate": "2026-09-14",
+
+            "appointmentHistory": [
+                {
+                    "doctor": "Dr. Ananya Verma",
+                    "specialization": "Cardiologist",
+                    "date": "2026-09-20",
+                    "time": "10:00 AM",
+                    "status": "Confirmed"
+                }
+            ]
+        }
+    ]
+}

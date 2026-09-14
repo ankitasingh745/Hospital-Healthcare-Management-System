@@ -1,0 +1,458 @@
+ /* =========================================
+   GLOBAL
+========================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f4f9fc;
+    color: #1f2937;
+}
+
+
+/* =========================================
+   HEADER
+========================================= */
+
+.page-header {
+    background: linear-gradient(135deg, #1769aa, #2196c8);
+    color: white;
+    padding: 28px 60px;
+    position: relative;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.12);
+}
+
+.header-content {
+    text-align: center;
+}
+
+.header-content h1 {
+    font-size: 34px;
+    margin-bottom: 8px;
+    font-weight: 700;
+}
+
+.header-content p {
+    font-size: 16px;
+    opacity: 0.9;
+}
+
+.back-btn {
+    position: absolute;
+    left: 30px;
+    top: 30px;
+    padding: 11px 20px;
+    background: white;
+    color: #1769aa;
+    border: none;
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.back-btn:hover {
+    background: #e8f5fb;
+    transform: translateX(-2px);
+}
+
+
+/* =========================================
+   MAIN CONTAINER
+========================================= */
+
+.registration-container {
+    width: 90%;
+    max-width: 1050px;
+    margin: 35px auto;
+}
+
+
+/* =========================================
+   FORM SECTION
+========================================= */
+
+.form-section {
+    background: white;
+    border-radius: 12px;
+    margin-bottom: 25px;
+    overflow: hidden;
+    border: 1px solid #dcebf2;
+    box-shadow: 0 5px 18px rgba(23, 105, 170, 0.08);
+}
+
+.section-heading {
+    padding: 18px 25px;
+    background: linear-gradient(
+        90deg,
+        #e6f6fc,
+        #f8fcfe
+    );
+    border-left: 6px solid #2196c8;
+    border-bottom: 1px solid #dcebf2;
+}
+
+.section-heading h2 {
+    color: #1769aa;
+    font-size: 20px;
+}
+
+
+/* =========================================
+   FORM GRID
+========================================= */
+
+.form-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 22px;
+    padding: 28px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.full-width {
+    grid-column: 1 / -1;
+}
+
+
+/* =========================================
+   LABELS
+========================================= */
+
+.form-group label {
+    font-size: 15px;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: #263b4a;
+}
+
+.required {
+    color: #e63946;
+    font-weight: bold;
+    margin-left: 3px;
+}
+
+
+/* =========================================
+   INPUTS
+========================================= */
+
+input,
+select,
+textarea {
+    width: 100%;
+    padding: 13px 15px;
+    border: 1.5px solid #cbdde6;
+    border-radius: 8px;
+    font-size: 15px;
+    font-family: inherit;
+    background: #fbfdfe;
+    color: #263b4a;
+    transition: 0.25s;
+}
+
+input::placeholder,
+textarea::placeholder {
+    color: #9aaab3;
+}
+
+input:hover,
+select:hover,
+textarea:hover {
+    border-color: #8fc7df;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    outline: none;
+    border-color: #2196c8;
+    background: white;
+    box-shadow: 0 0 0 3px rgba(33, 150, 200, 0.12);
+}
+
+textarea {
+    min-height: 110px;
+    resize: vertical;
+}
+
+
+/* =========================================
+   FORM ACTIONS
+========================================= */
+
+.form-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 15px;
+    margin: 10px auto 45px;
+    width: 90%;
+    max-width: 1050px;
+}
+
+
+/* =========================================
+   BUTTONS
+========================================= */
+
+.primary-btn,
+.secondary-btn {
+    padding: 13px 26px;
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.primary-btn {
+    background: linear-gradient(135deg, #1769aa, #2196c8);
+    color: white;
+    border: none;
+    box-shadow: 0 4px 10px rgba(23, 105, 170, 0.2);
+}
+
+.primary-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 7px 15px rgba(23, 105, 170, 0.28);
+}
+
+.secondary-btn {
+    background: white;
+    color: #1769aa;
+    border: 1.5px solid #9fcddd;
+}
+
+.secondary-btn:hover {
+    background: #eef8fc;
+}
+
+
+/* =========================================
+   PREVIEW OVERLAY
+========================================= */
+
+.preview-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(20, 45, 60, 0.65);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
+    z-index: 1000;
+    overflow-y: auto;
+}
+
+.preview-card {
+    width: 95%;
+    max-width: 900px;
+    max-height: 92vh;
+    overflow-y: auto;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 15px 50px rgba(0, 0, 0, 0.25);
+}
+
+.preview-card > h1 {
+    background: linear-gradient(135deg, #1769aa, #2196c8);
+    color: white;
+    padding: 25px;
+    text-align: center;
+    font-size: 27px;
+}
+
+.preview-card > p {
+    text-align: center;
+    padding: 15px 20px;
+    color: #6b7280;
+}
+
+
+/* =========================================
+   PREVIEW SECTIONS
+========================================= */
+
+.preview-section {
+    margin: 18px 25px;
+    border: 1px solid #dcebf2;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.preview-section h2 {
+    padding: 13px 18px;
+    background: #e8f6fb;
+    color: #1769aa;
+    font-size: 18px;
+    border-left: 5px solid #2196c8;
+}
+
+.preview-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 18px;
+    padding: 20px;
+}
+
+.preview-grid > div {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.preview-grid strong {
+    font-size: 13px;
+    color: #687984;
+}
+
+.preview-grid span {
+    font-size: 15px;
+    color: #1f2937;
+}
+
+.preview-full {
+    grid-column: 1 / -1;
+}
+
+
+/* =========================================
+   PREVIEW ACTIONS
+========================================= */
+
+.preview-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 15px;
+    padding: 25px;
+    border-top: 1px solid #e1edf2;
+}
+
+
+/* =========================================
+   SUCCESS SCREEN
+========================================= */
+
+.success-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(20, 45, 60, 0.65);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1100;
+}
+
+.success-card {
+    background: white;
+    width: 90%;
+    max-width: 480px;
+    padding: 45px 35px;
+    text-align: center;
+    border-radius: 16px;
+    box-shadow: 0 15px 45px rgba(0, 0, 0, 0.25);
+}
+
+.success-icon {
+    width: 70px;
+    height: 70px;
+    margin: 0 auto 20px;
+    border-radius: 50%;
+    background: #e6f7ed;
+    color: #20a05a;
+    font-size: 42px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+}
+
+.success-card h1 {
+    color: #1769aa;
+    margin-bottom: 10px;
+}
+
+.success-card p {
+    color: #687984;
+    margin-bottom: 22px;
+}
+
+.patient-id {
+    background: #eef8fc;
+    border: 1px solid #c8e5f0;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 25px;
+    color: #1769aa;
+    font-size: 16px;
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 700px) {
+
+    .page-header {
+        padding: 25px 20px;
+    }
+
+    .header-content h1 {
+        font-size: 26px;
+    }
+
+    .back-btn {
+        position: static;
+        margin-bottom: 18px;
+    }
+
+    .registration-container {
+        width: 94%;
+    }
+
+    .form-grid {
+        grid-template-columns: 1fr;
+        padding: 20px;
+    }
+
+    .full-width {
+        grid-column: auto;
+    }
+
+    .form-actions {
+        width: 94%;
+        flex-direction: column;
+    }
+
+    .primary-btn,
+    .secondary-btn {
+        width: 100%;
+    }
+
+    .preview-card {
+        max-height: 95vh;
+    }
+
+    .preview-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .preview-full {
+        grid-column: auto;
+    }
+
+    .preview-actions {
+        flex-direction: column;
+    }
+}
