@@ -1,0 +1,694 @@
+ /* =========================================
+   BASIC RESET
+========================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+
+    background-color: #f5f8fc;
+
+    color: #19324d;
+}
+
+
+/* =========================================
+   MAIN DOCTOR MODULE
+========================================= */
+
+.doctor-module {
+
+    width: 90%;
+
+    max-width: 1350px;
+
+    margin: auto;
+
+    padding: 45px 0 70px;
+}
+
+
+/* =========================================
+   HEADER
+========================================= */
+
+.doctor-header {
+
+    margin-bottom: 30px;
+}
+
+
+.breadcrumb {
+
+    color: #8091a5;
+
+    font-size: 13px;
+
+    margin-bottom: 12px;
+}
+
+
+.doctor-header h1 {
+
+    font-size: 32px;
+
+    color: #163654;
+
+    margin-bottom: 8px;
+}
+
+
+.header-text {
+
+    color: #718399;
+
+    font-size: 14px;
+
+    line-height: 1.6;
+}
+
+
+/* =========================================
+   SEARCH SECTION
+========================================= */
+
+.search-section {
+
+    background-color: white;
+
+    border: 1px solid #e1e9f2;
+
+    border-radius: 14px;
+
+    padding: 18px;
+
+    display: flex;
+
+    gap: 14px;
+
+    margin-bottom: 38px;
+
+    box-shadow: 0 5px 20px rgba(30, 60, 90, 0.04);
+}
+
+
+/* SEARCH BOX */
+
+.search-box {
+
+    position: relative;
+
+    flex: 1;
+}
+
+
+.search-box input {
+
+    width: 100%;
+
+    height: 48px;
+
+    border: 1px solid #d8e2ed;
+
+    border-radius: 9px;
+
+    padding-left: 44px;
+
+    padding-right: 15px;
+
+    font-size: 13px;
+
+    color: #34495e;
+
+    outline: none;
+}
+
+
+.search-box input::placeholder {
+
+    color: #91a0b1;
+}
+
+
+.search-box input:focus {
+
+    border-color: #1874b5;
+
+    box-shadow: 0 0 0 3px rgba(24, 116, 181, 0.08);
+}
+
+
+.search-icon {
+
+    position: absolute;
+
+    left: 15px;
+
+    top: 14px;
+
+    font-size: 17px;
+}
+
+
+/* FILTER */
+
+.search-section select {
+
+    width: 210px;
+
+    height: 48px;
+
+    padding: 0 13px;
+
+    border: 1px solid #d8e2ed;
+
+    border-radius: 9px;
+
+    background-color: white;
+
+    color: #52667c;
+
+    font-size: 13px;
+
+    outline: none;
+
+    cursor: pointer;
+}
+
+
+.search-section select:focus {
+
+    border-color: #1874b5;
+}
+
+
+/* =========================================
+   DOCTOR SECTION
+========================================= */
+
+.section-heading {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    margin-bottom: 22px;
+}
+
+
+.section-heading h2 {
+
+    font-size: 22px;
+
+    color: #193852;
+
+    margin-bottom: 5px;
+}
+
+
+.section-heading p {
+
+    color: #8a99a9;
+
+    font-size: 12px;
+}
+
+
+.doctor-count {
+
+    background-color: #e9f4ff;
+
+    color: #176eaa;
+
+    padding: 8px 14px;
+
+    border-radius: 20px;
+
+    font-size: 12px;
+
+    font-weight: 600;
+}
+
+
+/* =========================================
+   DOCTOR GRID
+========================================= */
+
+.doctor-grid {
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 22px;
+}
+
+
+/* =========================================
+   DOCTOR CARD
+========================================= */
+
+.doctor-card {
+
+    background-color: white;
+
+    border: 1px solid #e2eaf2;
+
+    border-radius: 15px;
+
+    overflow: hidden;
+
+    transition: all 0.3s ease;
+
+    box-shadow: 0 5px 18px rgba(30, 70, 100, 0.04);
+}
+
+
+.doctor-card:hover {
+
+    transform: translateY(-5px);
+
+    border-color: #cbddea;
+
+    box-shadow: 0 15px 35px rgba(30, 70, 100, 0.10);
+}
+
+
+/* =========================================
+   CARD TOP
+========================================= */
+
+.card-top {
+
+    display: flex;
+
+    align-items: flex-start;
+
+    justify-content: space-between;
+
+    padding: 22px 22px 0;
+}
+
+
+/* =========================================
+   DOCTOR AVATAR
+========================================= */
+
+.doctor-avatar {
+
+    width: 76px;
+
+    height: 76px;
+
+    border-radius: 18px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    font-size: 23px;
+
+    font-weight: 700;
+
+    border: 4px solid white;
+
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+}
+
+
+/* Different Avatar Colors */
+
+.avatar-blue {
+
+    background-color: #dceeff;
+
+    color: #176da9;
+}
+
+
+.avatar-purple {
+
+    background-color: #e9e1ff;
+
+    color: #7045c8;
+}
+
+
+.avatar-pink {
+
+    background-color: #ffe1eb;
+
+    color: #c52e66;
+}
+
+
+.avatar-orange {
+
+    background-color: #fff0d8;
+
+    color: #c97900;
+}
+
+
+.avatar-green {
+
+    background-color: #def5eb;
+
+    color: #16865d;
+}
+
+
+.avatar-gray {
+
+    background-color: #e4e9ef;
+
+    color: #526274;
+}
+
+
+/* =========================================
+   STATUS
+========================================= */
+
+.status {
+
+    padding: 7px 10px;
+
+    border-radius: 20px;
+
+    font-size: 10px;
+
+    font-weight: 600;
+}
+
+
+.status.available {
+
+    color: #16865d;
+
+    background-color: #e7f8f0;
+}
+
+
+.status.busy {
+
+    color: #c17a00;
+
+    background-color: #fff5df;
+}
+
+
+.status.leave {
+
+    color: #cf4b4b;
+
+    background-color: #fff0f0;
+}
+
+
+/* =========================================
+   DOCTOR CONTENT
+========================================= */
+
+.doctor-content {
+
+    padding: 18px 22px 21px;
+}
+
+
+.doctor-content h3 {
+
+    font-size: 17px;
+
+    color: #18334f;
+
+    margin-bottom: 6px;
+}
+
+
+.specialization {
+
+    color: #176eaa;
+
+    font-size: 13px;
+
+    font-weight: 600;
+
+    margin-bottom: 7px;
+}
+
+
+.experience {
+
+    color: #8795a5;
+
+    font-size: 11px;
+
+    margin-bottom: 18px;
+}
+
+
+/* =========================================
+   DOCTOR INFORMATION
+========================================= */
+
+.doctor-info {
+
+    border-top: 1px solid #edf1f5;
+
+    border-bottom: 1px solid #edf1f5;
+
+    padding: 15px 0;
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 13px;
+}
+
+
+.info-item {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+}
+
+
+.info-item > span {
+
+    width: 30px;
+
+    height: 30px;
+
+    border-radius: 8px;
+
+    background-color: #f2f7fb;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    font-size: 13px;
+}
+
+
+.info-item small {
+
+    display: block;
+
+    color: #8997a7;
+
+    font-size: 9px;
+
+    margin-bottom: 3px;
+}
+
+
+.info-item strong {
+
+    display: block;
+
+    color: #526579;
+
+    font-size: 11px;
+
+    font-weight: 600;
+}
+
+
+/* =========================================
+   CARD FOOTER
+========================================= */
+
+.card-footer {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    padding-top: 17px;
+}
+
+
+.slots {
+
+    color: #16865d;
+
+    font-size: 10px;
+
+    font-weight: 600;
+}
+
+
+.slots.unavailable {
+
+    color: #8d99a6;
+}
+
+
+.card-footer button {
+
+    border: 1px solid #176eaa;
+
+    background-color: white;
+
+    color: #176eaa;
+
+    padding: 8px 12px;
+
+    border-radius: 7px;
+
+    font-size: 10px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+
+.card-footer button:hover {
+
+    background-color: #176eaa;
+
+    color: white;
+}
+
+
+.card-footer button.disabled {
+
+    border-color: #dce3e9;
+
+    color: #9aa6b2;
+
+    background-color: #f8fafb;
+
+    cursor: not-allowed;
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 1050px) {
+
+    .doctor-grid {
+
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+
+    .search-section {
+
+        flex-wrap: wrap;
+    }
+
+
+    .search-box {
+
+        flex-basis: 100%;
+    }
+
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 650px) {
+
+    .doctor-module {
+
+        width: 92%;
+
+        padding-top: 30px;
+    }
+
+
+    .doctor-header h1 {
+
+        font-size: 26px;
+    }
+
+
+    .search-section {
+
+        flex-direction: column;
+    }
+
+
+    .search-box {
+
+        width: 100%;
+    }
+
+
+    .search-section select {
+
+        width: 100%;
+    }
+
+
+    .doctor-grid {
+
+        grid-template-columns: 1fr;
+    }
+
+
+    .section-heading {
+
+        align-items: flex-start;
+
+        gap: 10px;
+    }
+
+
+    .doctor-count {
+
+        font-size: 10px;
+
+        padding: 6px 10px;
+    }
+
+}

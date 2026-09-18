@@ -1,0 +1,592 @@
+ <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Doctor Management</title>
+
+    <!-- CSS File -->
+    <link rel="stylesheet" href="doctor.css">
+</head>
+
+<body>
+
+    <!-- ================================
+         DOCTOR MODULE
+    ================================= -->
+
+    <main class="doctor-module">
+
+        <!-- Header -->
+
+        <section class="doctor-header">
+
+            <div>
+                <p class="breadcrumb">Home / Doctors</p>
+
+                <h1>Doctor Management</h1>
+
+                <p class="header-text">
+                    Find doctors, view their specializations,
+                    availability and schedules.
+                </p>
+            </div>
+
+        </section>
+
+
+        <!-- ================================
+             SEARCH & FILTER
+        ================================= -->
+
+        <section class="search-section">
+
+            <!-- Search -->
+
+            <div class="search-box">
+
+                <span class="search-icon">🔍</span>
+
+                <input
+                    type="text"
+                    placeholder="Search doctor by name or specialization..."
+                >
+
+            </div>
+
+
+            <!-- Specialization -->
+
+            <select>
+
+                <option>All Specializations</option>
+
+                <option>Cardiologist</option>
+
+                <option>Neurologist</option>
+
+                <option>Dermatologist</option>
+
+                <option>Pediatrician</option>
+
+                <option>Gynecologist</option>
+
+                <option>Orthopedic</option>
+
+            </select>
+
+
+            <!-- Availability -->
+
+            <select>
+
+                <option>All Availability</option>
+
+                <option>Available</option>
+
+                <option>Busy</option>
+
+                <option>On Leave</option>
+
+            </select>
+
+        </section>
+
+
+
+        <!-- ================================
+             DOCTORS
+        ================================= -->
+
+        <section class="doctors-section">
+
+            <div class="section-heading">
+
+                <div>
+
+                    <h2>Our Doctors</h2>
+
+                    <p>
+                        View doctor information and available schedules
+                    </p>
+
+                </div>
+
+                <span class="doctor-count">
+                    6 Doctors
+                </span>
+
+            </div>
+
+
+            <!-- Doctor Cards -->
+
+            <div class="doctor-grid">
+
+
+                <!-- ================= DOCTOR 1 ================= -->
+
+                <div class="doctor-card">
+
+                    <div class="card-top">
+
+                        <div class="doctor-avatar avatar-blue">
+                            PS
+                        </div>
+
+                        <span class="status available">
+                            ● Available
+                        </span>
+
+                    </div>
+
+
+                    <div class="doctor-content">
+
+                        <h3>Dr. Priyanka Sharma</h3>
+
+                        <p class="specialization">
+                            Cardiologist
+                        </p>
+
+                        <p class="experience">
+                            10+ Years Experience
+                        </p>
+
+
+                        <div class="doctor-info">
+
+                            <div class="info-item">
+
+                                <span>📅</span>
+
+                                <div>
+                                    <small>Available Days</small>
+                                    <strong>Monday - Friday</strong>
+                                </div>
+
+                            </div>
+
+
+                            <div class="info-item">
+
+                                <span>🕐</span>
+
+                                <div>
+                                    <small>Consultation Time</small>
+                                    <strong>10:00 AM - 02:00 PM</strong>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="card-footer">
+
+                            <span class="slots">
+                                6 slots available
+                            </span>
+
+                            <button>
+                                View Schedule
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- ================= DOCTOR 2 ================= -->
+
+                <div class="doctor-card">
+
+                    <div class="card-top">
+
+                        <div class="doctor-avatar avatar-purple">
+                            RK
+                        </div>
+
+                        <span class="status available">
+                            ● Available
+                        </span>
+
+                    </div>
+
+
+                    <div class="doctor-content">
+
+                        <h3>Dr. Rahul Kumar</h3>
+
+                        <p class="specialization">
+                            Neurologist
+                        </p>
+
+                        <p class="experience">
+                            8+ Years Experience
+                        </p>
+
+
+                        <div class="doctor-info">
+
+                            <div class="info-item">
+
+                                <span>📅</span>
+
+                                <div>
+                                    <small>Available Days</small>
+                                    <strong>Monday - Saturday</strong>
+                                </div>
+
+                            </div>
+
+
+                            <div class="info-item">
+
+                                <span>🕐</span>
+
+                                <div>
+                                    <small>Consultation Time</small>
+                                    <strong>11:00 AM - 04:00 PM</strong>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="card-footer">
+
+                            <span class="slots">
+                                4 slots available
+                            </span>
+
+                            <button>
+                                View Schedule
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- ================= DOCTOR 3 ================= -->
+
+                <div class="doctor-card">
+
+                    <div class="card-top">
+
+                        <div class="doctor-avatar avatar-pink">
+                            NS
+                        </div>
+
+                        <span class="status busy">
+                            ● Busy
+                        </span>
+
+                    </div>
+
+
+                    <div class="doctor-content">
+
+                        <h3>Dr. Neha Singh</h3>
+
+                        <p class="specialization">
+                            Dermatologist
+                        </p>
+
+                        <p class="experience">
+                            7+ Years Experience
+                        </p>
+
+
+                        <div class="doctor-info">
+
+                            <div class="info-item">
+
+                                <span>📅</span>
+
+                                <div>
+                                    <small>Available Days</small>
+                                    <strong>Tuesday - Saturday</strong>
+                                </div>
+
+                            </div>
+
+
+                            <div class="info-item">
+
+                                <span>🕐</span>
+
+                                <div>
+                                    <small>Consultation Time</small>
+                                    <strong>09:00 AM - 01:00 PM</strong>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="card-footer">
+
+                            <span class="slots">
+                                2 slots available
+                            </span>
+
+                            <button>
+                                View Schedule
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- ================= DOCTOR 4 ================= -->
+
+                <div class="doctor-card">
+
+                    <div class="card-top">
+
+                        <div class="doctor-avatar avatar-orange">
+                            AM
+                        </div>
+
+                        <span class="status available">
+                            ● Available
+                        </span>
+
+                    </div>
+
+
+                    <div class="doctor-content">
+
+                        <h3>Dr. Amit Mehra</h3>
+
+                        <p class="specialization">
+                            Pediatrician
+                        </p>
+
+                        <p class="experience">
+                            12+ Years Experience
+                        </p>
+
+
+                        <div class="doctor-info">
+
+                            <div class="info-item">
+
+                                <span>📅</span>
+
+                                <div>
+                                    <small>Available Days</small>
+                                    <strong>Monday - Friday</strong>
+                                </div>
+
+                            </div>
+
+
+                            <div class="info-item">
+
+                                <span>🕐</span>
+
+                                <div>
+                                    <small>Consultation Time</small>
+                                    <strong>10:00 AM - 03:00 PM</strong>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="card-footer">
+
+                            <span class="slots">
+                                8 slots available
+                            </span>
+
+                            <button>
+                                View Schedule
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- ================= DOCTOR 5 ================= -->
+
+                <div class="doctor-card">
+
+                    <div class="card-top">
+
+                        <div class="doctor-avatar avatar-green">
+                            AS
+                        </div>
+
+                        <span class="status available">
+                            ● Available
+                        </span>
+
+                    </div>
+
+
+                    <div class="doctor-content">
+
+                        <h3>Dr. Anjali Sharma</h3>
+
+                        <p class="specialization">
+                            Gynecologist
+                        </p>
+
+                        <p class="experience">
+                            9+ Years Experience
+                        </p>
+
+
+                        <div class="doctor-info">
+
+                            <div class="info-item">
+
+                                <span>📅</span>
+
+                                <div>
+                                    <small>Available Days</small>
+                                    <strong>Monday - Saturday</strong>
+                                </div>
+
+                            </div>
+
+
+                            <div class="info-item">
+
+                                <span>🕐</span>
+
+                                <div>
+                                    <small>Consultation Time</small>
+                                    <strong>12:00 PM - 05:00 PM</strong>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="card-footer">
+
+                            <span class="slots">
+                                5 slots available
+                            </span>
+
+                            <button>
+                                View Schedule
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- ================= DOCTOR 6 ================= -->
+
+                <div class="doctor-card">
+
+                    <div class="card-top">
+
+                        <div class="doctor-avatar avatar-gray">
+                            VS
+                        </div>
+
+                        <span class="status leave">
+                            ● On Leave
+                        </span>
+
+                    </div>
+
+
+                    <div class="doctor-content">
+
+                        <h3>Dr. Vikram Singh</h3>
+
+                        <p class="specialization">
+                            Orthopedic
+                        </p>
+
+                        <p class="experience">
+                            11+ Years Experience
+                        </p>
+
+
+                        <div class="doctor-info">
+
+                            <div class="info-item">
+
+                                <span>📅</span>
+
+                                <div>
+                                    <small>Available Days</small>
+                                    <strong>Wednesday - Sunday</strong>
+                                </div>
+
+                            </div>
+
+
+                            <div class="info-item">
+
+                                <span>🕐</span>
+
+                                <div>
+                                    <small>Consultation Time</small>
+                                    <strong>04:00 PM - 08:00 PM</strong>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="card-footer">
+
+                            <span class="slots unavailable">
+                                Currently unavailable
+                            </span>
+
+                            <button class="disabled">
+                                View Schedule
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+        </section>
+
+    </main>
+
+</body>
+
+</html>
