@@ -1,0 +1,499 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f7fbff;
+    color: #1f2937;
+}
+
+.navbar {
+    min-height: 75px;
+    padding: 0 7%;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 29px;
+    font-weight: 700;
+    color: #1677c8;
+}
+
+.logo span {
+    color: #20a878;
+}
+
+.navbar nav {
+    display: flex;
+    align-items: center;
+    gap: 28px;
+}
+
+.navbar nav a {
+    text-decoration: none;
+    color: #374151;
+    font-size: 15px;
+    transition: 0.3s ease;
+}
+
+.navbar nav a:hover {
+    color: #1677c8;
+}
+
+.navbar .signin-button {
+    color: white;
+    background-color: #1677c8;
+    padding: 11px 22px;
+    border-radius: 6px;
+}
+
+.navbar .signin-button:hover {
+    background-color: #0e5f9f;
+    color: white;
+}
+
+.main-section {
+    min-height: 570px;
+    padding: 70px 7%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 60px;
+    background: linear-gradient(120deg, #eaf6ff, #f3fffa);
+}
+
+.main-content {
+    max-width: 620px;
+}
+
+.welcome-text {
+    color: #20a878;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+}
+
+.main-content h1 {
+    font-size: 54px;
+    line-height: 1.15;
+    color: #12344d;
+    margin-bottom: 22px;
+}
+
+.main-content h1 span {
+    display: block;
+    color: #1677c8;
+}
+
+.main-description {
+    max-width: 570px;
+    color: #5d6875;
+    font-size: 17px;
+    line-height: 1.8;
+    margin-bottom: 30px;
+}
+
+.main-buttons {
+    display: flex;
+    gap: 15px;
+}
+
+.primary-button,
+.secondary-button {
+    display: inline-block;
+    text-decoration: none;
+    padding: 13px 25px;
+    border-radius: 7px;
+    font-weight: bold;
+    transition: 0.3s ease;
+}
+
+.primary-button {
+    background-color: #1677c8;
+    color: white;
+}
+
+.primary-button:hover {
+    background-color: #0e5f9f;
+    transform: translateY(-2px);
+}
+
+.secondary-button {
+    background-color: white;
+    color: #1677c8;
+    border: 1px solid #1677c8;
+}
+
+.secondary-button:hover {
+    background-color: #1677c8;
+    color: white;
+    transform: translateY(-2px);
+}
+
+.healthcare-card {
+    width: 390px;
+    padding: 30px;
+    background-color: white;
+    border-radius: 16px;
+    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.1);
+}
+
+.healthcare-card h2 {
+    color: #12344d;
+    margin-bottom: 7px;
+}
+
+.card-description {
+    color: #78828e;
+    font-size: 14px;
+    margin-bottom: 22px;
+}
+
+.information-box {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 16px;
+    margin-bottom: 13px;
+    background-color: #f5f9fc;
+    border-radius: 10px;
+    transition: 0.3s ease;
+}
+
+.information-box:hover {
+    transform: translateX(5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+}
+
+.icon {
+    width: 48px;
+    height: 48px;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #e3f3ff;
+    border-radius: 50%;
+    font-size: 21px;
+}
+
+.information-box h3 {
+    color: #12344d;
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.information-box p {
+    color: #6b7280;
+    font-size: 13px;
+}
+
+.services-section {
+    padding: 80px 7%;
+    background-color: white;
+}
+
+.section-heading {
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+.section-heading p,
+.section-label {
+    color: #20a878;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+.section-heading h2 {
+    font-size: 34px;
+    color: #12344d;
+    margin-bottom: 12px;
+}
+
+.section-heading span {
+    color: #6b7280;
+    font-size: 15px;
+}
+
+.service-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 22px;
+}
+
+.service-card {
+    padding: 30px 24px;
+    background-color: #f8fbfd;
+    border: 1px solid #e7eef4;
+    border-radius: 12px;
+    transition: 0.3s ease;
+}
+
+.service-card:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+    border-color: #c9e5f7;
+}
+
+.service-icon {
+    width: 55px;
+    height: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #e3f3ff;
+    border-radius: 10px;
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+.service-card h3 {
+    color: #12344d;
+    font-size: 19px;
+    margin-bottom: 12px;
+}
+
+.service-card p {
+    color: #6b7280;
+    font-size: 14px;
+    line-height: 1.7;
+    margin-bottom: 18px;
+}
+
+.service-card a {
+    color: #1677c8;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.service-card a:hover {
+    color: #0e5f9f;
+}
+
+.about-section {
+    padding: 80px 7%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 60px;
+    background-color: #f5faff;
+}
+
+.about-content {
+    max-width: 600px;
+}
+
+.about-content h2 {
+    color: #12344d;
+    font-size: 36px;
+    line-height: 1.3;
+    margin-bottom: 20px;
+}
+
+.about-content p:not(.section-label) {
+    color: #66717e;
+    line-height: 1.7;
+    margin-bottom: 15px;
+}
+
+.about-box {
+    width: 400px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+}
+
+.about-box div {
+    background-color: white;
+    padding: 28px 20px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 5px 18px rgba(0, 0, 0, 0.06);
+    transition: 0.3s ease;
+}
+
+.about-box div:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 9px 22px rgba(0, 0, 0, 0.09);
+}
+
+.about-box strong {
+    display: block;
+    color: #1677c8;
+    font-size: 27px;
+    margin-bottom: 7px;
+}
+
+.about-box span {
+    color: #6b7280;
+    font-size: 13px;
+}
+
+footer {
+    background-color: #12344d;
+    color: white;
+    padding: 35px 7% 20px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 25px;
+}
+
+.footer-content h2 {
+    font-size: 25px;
+    margin-bottom: 7px;
+}
+
+.footer-content h2 span {
+    color: #20a878;
+}
+
+.footer-content p {
+    color: #b8c6d2;
+    font-size: 13px;
+}
+
+.footer-links {
+    display: flex;
+    gap: 25px;
+}
+
+.footer-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    transition: 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: #65d3aa;
+}
+
+.copyright {
+    text-align: center;
+    padding-top: 20px;
+    border-top: 1px solid #31536b;
+    color: #aebdca;
+    font-size: 12px;
+}
+
+@media (max-width: 1000px) {
+
+    .main-section {
+        padding: 60px 5%;
+    }
+
+    .main-content h1 {
+        font-size: 45px;
+    }
+
+    .service-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .about-section {
+        padding: 70px 5%;
+    }
+}
+
+@media (max-width: 800px) {
+
+    .navbar {
+        padding: 15px 5%;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .navbar nav {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .main-section {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .main-buttons {
+        justify-content: center;
+    }
+
+    .healthcare-card {
+        width: 100%;
+        max-width: 430px;
+    }
+
+    .about-section {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-box {
+        width: 100%;
+        max-width: 430px;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+    }
+}
+
+@media (max-width: 550px) {
+
+    .main-content h1 {
+        font-size: 38px;
+    }
+
+    .main-description {
+        font-size: 15px;
+    }
+
+    .main-buttons {
+        flex-direction: column;
+    }
+
+    .service-container {
+        grid-template-columns: 1fr;
+    }
+
+    .services-section {
+        padding: 60px 5%;
+    }
+
+    .section-heading h2 {
+        font-size: 28px;
+    }
+
+    .about-content h2 {
+        font-size: 29px;
+    }
+
+    .about-box {
+        grid-template-columns: 1fr;
+    }
+}
