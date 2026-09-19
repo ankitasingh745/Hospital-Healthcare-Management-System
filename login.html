@@ -3,64 +3,147 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hospital Healthcare - Login</title>
+    <title>MediCare - Sign In</title>
+    <link rel="stylesheet" href="login.css">
 </head>
 
 <body>
 
-    <header>
-        <h1>Hospital & Healthcare Management System</h1>
-        <p>Welcome Back! Please login to continue.</p>
+    <header class="navbar">
+
+        <div class="logo">
+            Medi<span>Care</span>
+        </div>
+
+        <a href="index.html" class="home-link">Home</a>
+
     </header>
 
-    <main>
-        <section>
-            <h2>Login</h2>
 
-            <form>
+    <main class="login-section">
 
-                <div>
-                    <label for="email">Email</label>
-                    <input 
-                        type="email" 
-                        id="email" 
-                        name="email"
-                        placeholder="Enter your email"
-                        required
-                    >
-                </div>
+        <div class="login-container">
 
-                <br>
+            <div class="login-info">
 
-                <div>
-                    <label for="password">Password</label>
-                    <input 
-                        type="password" 
-                        id="password" 
-                        name="password"
-                        placeholder="Enter your password"
-                        required
-                    >
-                </div>
+                <p class="welcome-text">WELCOME BACK</p>
 
-                <br>
-
-                <div>
-                    <input type="checkbox" id="remember" name="remember">
-                    <label for="remember">Remember Me</label>
-                </div>
-
-                <br>
-
-                <button type="submit">Login</button>
+                <h1>Sign In to <span>MediCare</span></h1>
 
                 <p>
-                    <a href="#">Forgot Password?</a>
+                    Access hospital and healthcare information
+                    through your MediCare account.
                 </p>
 
-            </form>
-        </section>
+                <div class="info-box">
+                    <div class="info-icon">🔐</div>
+                    <div>
+                        <h3>Secure Access</h3>
+                        <p>Sign in to access healthcare information.</p>
+                    </div>
+                </div>
+
+                <div class="info-box">
+                    <div class="info-icon">🏥</div>
+                    <div>
+                        <h3>Healthcare Management</h3>
+                        <p>Manage hospital-related information easily.</p>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <div class="login-card">
+
+                <div class="card-heading">
+
+                    <div class="login-icon">👤</div>
+
+                    <h2>Sign In</h2>
+
+                    <p>Enter your details to continue</p>
+
+                </div>
+
+
+                <form>
+
+                    <div class="form-group">
+
+                        <label for="email">Email Address</label>
+
+                        <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            placeholder="Enter your email"
+                            required
+                        >
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="password">Password</label>
+
+                        <input
+                            type="password"
+                            id="password"
+                            name="password"
+                            placeholder="Enter your password"
+                            required
+                        >
+
+                    </div>
+
+
+                    <div class="form-options">
+
+                        <div class="remember">
+
+                            <input
+                                type="checkbox"
+                                id="remember"
+                                name="remember"
+                            >
+
+                            <label for="remember">Remember Me</label>
+
+                        </div>
+
+                        <a href="#">Forgot Password?</a>
+
+                    </div>
+
+
+                    <button type="submit" class="login-button">
+                        Sign In
+                    </button>
+
+                </form>
+
+
+                <p class="back-text">
+                    Don't have an account?
+                    <a href="#">Contact Hospital</a>
+                </p>
+
+            </div>
+
+        </div>
+
     </main>
+
+
+    <footer>
+
+        <p>
+            © 2026 MediCare. All Rights Reserved.
+        </p>
+
+    </footer>
 
 </body>
 </html>
