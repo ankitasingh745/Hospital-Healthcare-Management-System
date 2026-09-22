@@ -2,10 +2,144 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Appointment Administration</title>
+
+    <link rel="stylesheet" href="appointment-admin.css">
 </head>
+
 <body>
-    
+
+<div class="container">
+
+    <div class="header">
+        <div>
+            <h1>Appointment Administration</h1>
+            <p>Hospital Healthcare Management System</p>
+        </div>
+        <button>+ New Appointment</button>
+    </div>
+
+    <div class="stats">
+        <div class="card">
+            <h2>145</h2>
+            <span>Today's Appointments</span>
+        </div>
+
+        <div class="card">
+            <h2>24</h2>
+            <span>Pending Requests</span>
+        </div>
+
+        <div class="card">
+            <h2>18</h2>
+            <span>Doctors Available</span>
+        </div>
+
+        <div class="card">
+            <h2>12</h2>
+            <span>Emergency Cases</span>
+        </div>
+    </div>
+
+    <div class="form-card">
+
+        <h2>Book New Appointment</h2>
+
+        <form>
+
+            <div class="grid">
+
+                <div class="group">
+                    <label>Patient ID</label>
+                    <input type="text" placeholder="PAT-2045">
+                </div>
+
+                <div class="group">
+                    <label>Patient Name</label>
+                    <input type="text" placeholder="Enter patient name">
+                </div>
+
+                <div class="group">
+                    <label>Department</label>
+                    <select>
+                        <option>Select Department</option>
+                        <option>Cardiology</option>
+                        <option>Orthopedics</option>
+                        <option>Neurology</option>
+                        <option>Pediatrics</option>
+                        <option>Dermatology</option>
+                    </select>
+                </div>
+
+                <div class="group">
+                    <label>Doctor</label>
+                    <select>
+                        <option>Select Doctor</option>
+                        <option>Dr. Rahul Sharma</option>
+                        <option>Dr. Priya Singh</option>
+                        <option>Dr. Vivek Kumar</option>
+                        <option>Dr. Anjali Verma</option>
+                    </select>
+                </div>
+
+                <div class="group">
+                    <label>Appointment Date</label>
+                    <input type="date">
+                </div>
+
+                <div class="group">
+                    <label>Appointment Time</label>
+                    <input type="time">
+                </div>
+
+                <div class="group">
+                    <label>Visit Type</label>
+                    <select>
+                        <option>New Consultation</option>
+                        <option>Follow Up</option>
+                        <option>Routine Checkup</option>
+                        <option>Emergency</option>
+                    </select>
+                </div>
+
+                <div class="group">
+                    <label>Room Number</label>
+                    <input type="text" placeholder="Room 205">
+                </div>
+
+                <div class="group full">
+                    <label>Priority Level</label>
+
+                    <div class="priority">
+                        <label><input type="radio" name="priority"> Normal</label>
+                        <label><input type="radio" name="priority"> Urgent</label>
+                        <label><input type="radio" name="priority"> Emergency</label>
+                    </div>
+                </div>
+
+                <div class="group full">
+                    <label>Reason For Visit</label>
+                    <textarea placeholder="Enter symptoms or reason for appointment"></textarea>
+                </div>
+
+                <div class="group full">
+                    <label>Admin Notes</label>
+                    <textarea placeholder="Internal appointment remarks"></textarea>
+                </div>
+
+            </div>
+
+            <div class="buttons">
+                <button type="reset" class="reset-btn">Reset</button>
+                <button type="submit" class="submit-btn">Confirm Appointment</button>
+            </div>
+
+        </form>
+
+    </div>
+
+</div>
+
 </body>
 </html>
