@@ -1,4 +1,4 @@
- <!DOCTYPE html>
+  <!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -37,39 +37,32 @@
 
                 <input
                     type="text"
+                    id = "doctorSearch"
                     placeholder="Search doctor by name or specialization..."
                 >
 
             </div>
-
-            <select>
-
-                <option>All Specializations</option>
-
-                <option>Cardiologist</option>
-
-                <option>Neurologist</option>
-
-                <option>Dermatologist</option>
-
-                <option>Pediatrician</option>
-
-                <option>Gynecologist</option>
-
-                <option>Orthopedic</option>
-
+            <select id="specializationFilter">
+            <option value="all">All Specializations</option>
+            <option value="Cardiologist">Cardiologist</option>
+            <option value="Neurologist">Neurologist</option>
+            <option value="Dermatologist">Dermatologist</option>
+            <option value="Pediatrician">Pediatrician</option>
+            <option value="Gynecologist">Gynecologist</option>
+             <option value="Orthopedic">Orthopedic</option>
             </select>
 
+             
 
-            <select>
+             
 
-                <option>All Availability</option>
 
-                <option>Available</option>
+            <select id="availabilityFilter">
 
-                <option>Busy</option>
-
-                <option>On Leave</option>
+                   <option value="all">All Availability</option>
+                   <option value="Available">Available</option>
+                    <option value="Busy">Busy</option>
+                    <option value="On Leave">On Leave</option>
 
             </select>
 
@@ -89,7 +82,7 @@
 
                 </div>
 
-                <span class="doctor-count">
+                <span class="doctor-count" id="doctorCount">
                     6 Doctors
                 </span>
 
@@ -538,7 +531,8 @@
         </section>
 
     </main>
-
+  <script src="./doctor.js"></script>
+ 
 </body>
 
 </html>
