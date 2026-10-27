@@ -1,6 +1,8 @@
 const loginForm = document.querySelector("#loginForm");
 const emailInput = document.querySelector("#email");
 const passwordInput = document.querySelector("#password");
+const successModal = document.querySelector("#successModal");
+const continueButton = document.querySelector("#continueButton");
 
 loginForm.addEventListener("submit", function(event) {
 
@@ -29,7 +31,9 @@ loginForm.addEventListener("submit", function(event) {
         return;
     }
 
-    alert("Login successful!");
+    successModal.style.display = "flex";
+});
 
+continueButton.addEventListener("click", function() {
     window.location.href = "main-dash/dash.html";
 });
