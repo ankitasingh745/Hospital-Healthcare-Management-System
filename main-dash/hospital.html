@@ -1,0 +1,316 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MediCare - Hospital Information</title>
+    <link rel="stylesheet" href="hospital.css">
+</head>
+
+<body>
+
+    <header class="navbar">
+        <div class="logo">Medi<span>Care</span></div>
+
+        <nav>
+            <a href="dash.html">Dashboard</a>
+            <a href="../web-dashboard/index.html">Home</a>
+            <a href="#about">About</a>
+            <a href="#specialties">Specialties</a>
+            <a href="#facilities">Facilities</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <section class="hero">
+            <div class="hero-content">
+                <p class="tagline">WELCOME TO MEDICARE</p>
+                <h1>Your Health, Our Priority</h1>
+                <p>
+                    Explore healthcare information, medical specialties
+                    and hospital facilities through one organized platform.
+                </p>
+                <a href="#specialties" class="hero-button">
+                    Explore Specialties
+                </a>
+            </div>
+        </section>
+
+        <section class="about section" id="about">
+            <div class="section-heading">
+                <p>ABOUT US</p>
+                <h2>About MediCare</h2>
+            </div>
+
+            <div class="about-content">
+                <div>
+                    <h3>Healthcare Information Made Simple</h3>
+                    <p>
+                        MediCare is a Hospital and Healthcare Management
+                        System designed to organize and present hospital-related
+                        information through a user-friendly interface.
+                    </p>
+                    <p>
+                        Users can explore medical specialties, doctor
+                        information, patient information and appointment-related
+                        services from one platform.
+                    </p>
+                </div>
+
+                <div class="about-highlight">
+                    <div class="highlight-icon">🏥</div>
+                    <h3>One Platform</h3>
+                    <p>
+                        Explore hospital and healthcare management
+                        information in an organized way.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="specialties section" id="specialties">
+            <div class="section-heading">
+                <p>OUR DEPARTMENTS</p>
+                <h2>Medical Specialties</h2>
+                <span>
+                    Explore different medical specialties and their services.
+                </span>
+            </div>
+
+            <div class="search-box">
+                <input
+                    type="search"
+                    id="specialtySearch"
+                    placeholder="Search medical specialties..."
+                >
+            </div>
+
+            <div class="specialty-grid" id="specialtyGrid">
+
+                <div class="specialty-card">
+                    <div class="specialty-icon">👶</div>
+                    <h3>Pediatric & Neonatology</h3>
+                    <p>
+                        Healthcare information related to infants,
+                        children and newborn babies.
+                    </p>
+                </div>
+
+                <div class="specialty-card">
+                    <div class="specialty-icon">🧘</div>
+                    <h3>Physiotherapy & Rehabilitation</h3>
+                    <p>
+                        Information about physical rehabilitation,
+                        movement and recovery services.
+                    </p>
+                </div>
+
+                <div class="specialty-card">
+                    <div class="specialty-icon">🩺</div>
+                    <h3>Plastic & Aesthetic Surgery</h3>
+                    <p>
+                        Information about reconstructive and
+                        aesthetic surgical procedures.
+                    </p>
+                </div>
+
+                <div class="specialty-card">
+                    <div class="specialty-icon">🔬</div>
+                    <h3>Radiodiagnosis & Interventional Radiology</h3>
+                    <p>
+                        Information about diagnostic imaging
+                        and image-guided procedures.
+                    </p>
+                </div>
+
+                <div class="specialty-card">
+                    <div class="specialty-icon">👂</div>
+                    <h3>ENT</h3>
+                    <p>
+                        Medical specialty related to ear,
+                        nose and throat conditions.
+                    </p>
+                </div>
+
+                <div class="specialty-card">
+                    <div class="specialty-icon">🫀</div>
+                    <h3>Gastroenterology & Liver Diseases</h3>
+                    <p>
+                        Information about digestive system
+                        and liver-related conditions.
+                    </p>
+                </div>
+
+                <div class="specialty-card">
+                    <div class="specialty-icon">🏥</div>
+                    <h3>Gastrointestinal, HPB & GI Onco Surgery</h3>
+                    <p>
+                        Information about surgical care for
+                        digestive system-related conditions.
+                    </p>
+                </div>
+
+                <div class="specialty-card">
+                    <div class="specialty-icon">⚕️</div>
+                    <h3>General & Laparoscopic Surgery</h3>
+                    <p>
+                        Information about general and
+                        minimally invasive surgical procedures.
+                    </p>
+                </div>
+
+            </div>
+
+            <p id="noResults" class="no-results">
+                No matching specialty found.
+            </p>
+        </section>
+
+        <section class="facilities section" id="facilities">
+            <div class="section-heading">
+                <p>WHAT WE OFFER</p>
+                <h2>Hospital Facilities</h2>
+                <span>
+                    Explore different types of healthcare facilities.
+                </span>
+            </div>
+
+            <div class="facility-grid">
+
+                <div class="facility-card">
+                    <div class="facility-icon">🚑</div>
+                    <h3>Emergency Care</h3>
+                    <p>
+                        Information about emergency healthcare
+                        and medical assistance.
+                    </p>
+                </div>
+
+                <div class="facility-card">
+                    <div class="facility-icon">💊</div>
+                    <h3>Pharmacy</h3>
+                    <p>
+                        Information about pharmacy and
+                        medication-related services.
+                    </p>
+                </div>
+
+                <div class="facility-card">
+                    <div class="facility-icon">🧪</div>
+                    <h3>Laboratory</h3>
+                    <p>
+                        Information about diagnostic testing
+                        and laboratory services.
+                    </p>
+                </div>
+
+                <div class="facility-card">
+                    <div class="facility-icon">🩻</div>
+                    <h3>Diagnostic Services</h3>
+                    <p>
+                        Information about medical imaging
+                        and diagnostic procedures.
+                    </p>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="why-choose section">
+            <div class="section-heading">
+                <p>OUR ADVANTAGES</p>
+                <h2>Why Choose MediCare?</h2>
+                <span>
+                    Making healthcare information easier to access and understand.
+                </span>
+            </div>
+
+            <div class="why-grid">
+
+                <div class="why-card">
+                    <div class="why-icon">❤️</div>
+                    <h3>Patient-Centred Approach</h3>
+                    <p>
+                        Designed to make healthcare-related
+                        information easier to understand.
+                    </p>
+                </div>
+
+                <div class="why-card">
+                    <div class="why-icon">👨‍⚕️</div>
+                    <h3>Medical Professionals</h3>
+                    <p>
+                        Explore doctor information and
+                        different medical specializations.
+                    </p>
+                </div>
+
+                <div class="why-card">
+                    <div class="why-icon">🏥</div>
+                    <h3>Multiple Specialties</h3>
+                    <p>
+                        Access information about different
+                        medical departments in one place.
+                    </p>
+                </div>
+
+                <div class="why-card">
+                    <div class="why-icon">💻</div>
+                    <h3>Easy Information Access</h3>
+                    <p>
+                        A simple and user-friendly interface
+                        for exploring healthcare information.
+                    </p>
+                </div>
+
+                <div class="why-card">
+                    <div class="why-icon">📋</div>
+                    <h3>Organized Management</h3>
+                    <p>
+                        Patient, doctor and appointment-related
+                        information organized in one platform.
+                    </p>
+                </div>
+
+                <div class="why-card">
+                    <div class="why-icon">🔍</div>
+                    <h3>Simple Navigation</h3>
+                    <p>
+                        Easily navigate between different
+                        healthcare sections and modules.
+                    </p>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="contact section" id="contact">
+            <div class="contact-content">
+                <p>GET IN TOUCH</p>
+                <h2>Explore MediCare</h2>
+                <span>
+                    Visit the dashboard to explore other healthcare modules.
+                </span>
+
+                <a href="dash.html" class="contact-button">
+                    Back to Dashboard
+                </a>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>© <span id="currentYear"></span> MediCare. All Rights Reserved.</p>
+        <p>Hospital & Healthcare Management System</p>
+    </footer>
+
+    <script src="hospital.js"></script>
+
+</body>
+</html>
